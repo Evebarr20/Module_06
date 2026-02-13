@@ -6,9 +6,8 @@ Created on Wed Feb 11 19:34:14 2026
 @author: evebarr20
 """
 
-class Date: 
+class Date:
     """Represents a year, month, and day"""
-    
     def __init__(self, year, month, day):
         """
         constructor method
@@ -33,7 +32,6 @@ class Date:
         self.day = day
     
     # I don't need make_date function because I used a constructor method instead
-        
     def print_date(self):
         """
         prints Date object
@@ -55,7 +53,6 @@ class Date:
             tuple that contains year, month, and day.
 
         """
-       
         return (self.year, self.month, self.day)
         
     def is_after(self, other):
@@ -73,6 +70,4 @@ class Date:
             True if first date comes after the second.
 
         """
-        return self.date_to_tuple > other.date_to_tuple()
-
-
+        return self.date_to_tuple() > other.date_to_tuple()
